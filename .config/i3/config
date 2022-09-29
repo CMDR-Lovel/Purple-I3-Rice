@@ -74,20 +74,20 @@ bindsym $mod+c 			            exec --no-startup-id lock
 bindsym $mod+Shift+c		        exec --no-startup-id $suspend
 
 # e
-bindsym $mod+e 			            exec --no-startup-id code-insiders -n
-bindsym $mod+Shift+e		        exec $term -e code-insiders
+#bindsym $mod+e 			            exec --no-startup-id code-insiders -n
+#bindsym $mod+Shift+e		        exec $term -e code-insiders
 
 # r
 bindsym $mod+r 			            exec cool-retro-term
 #bindsym $mod+Shift+r		        exec --no-startup-id winresize
 
 # t
-bindsym $mod+t 			            exec $term -e ytop
-bindsym $mod+Shift+t            focus mode_toggle
+#bindsym $mod+t 			            exec $term -e ytop
+#bindsym $mod+Shift+t            focus mode_toggle
 
 # y
 bindsym $mod+y			            exec --no-startup-id flameshot gui -p ~/Pictures/screenshots
-bindsym $mod+Shift+y		        exec --no-startup-id flameshot full -p ~/Pictures/screenshots
+#bindsym $mod+Shift+y		        exec --no-startup-id flameshot full -p ~/Pictures/screenshots
 
 # u
 bindsym $mod+u                  [urgent=latest] focus
@@ -96,11 +96,11 @@ bindsym $mod+u                  [urgent=latest] focus
 #bindsym $mod+i                  fullscreen disable; floating enable; resize set 300 200; sticky enable; move position 4792 53
 
 # o
-bindsym $mod+o			            exec --no-startup-id $term -e nvim ~/Repos/blog/content
-# bindsym $mod+Shift			        exec --no-startup-id $term -e nvim ~/Repos
+#bindsym $mod+o			            exec --no-startup-id $term -e nvim ~/Repos/blog/content
+bindsym $mod+Shift+o			        exec --no-startup-id obsidian
 
 # a
-bindsym $mod+a		              exec $term -e alsamixer
+#bindsym $mod+a		              exec $term -e alsamixer
 
 # s
 bindsym $mod+s        			    sticky toggle;
@@ -137,10 +137,10 @@ bindsym $mod+Shift+g		        gaps inner current set 0; gaps outer current set 0
 #bindsym $mod+Shift+l		        move right 30
 #bindsym $mod+Ctrl+l		          move workspace to output right
 
-bindsym $mod+semicolon 			    exec --no-startup-id skippy-xd
+#bindsym $mod+semicolon 			    exec --no-startup-id skippy-xd
 
 # z
-bindsym $mod+z			            exec --no-startup-id $term -e nvim ~/.zshrc
+#bindsym $mod+z			            exec --no-startup-id $term -e nvim ~/.zshrc
 
 # x
 bindsym $mod+x 			            exec --no-startup-id $reboot
@@ -151,7 +151,7 @@ bindsym $mod+p			            exec --no-startup-id picom -b
 bindsym $mod+Shift+p		        exec --no-startup-id killall picom
 
 # v
-bindsym $mod+v			            exec --no-startup-id mpv /dev/video0
+#bindsym $mod+Shift+v			            exec --no-startup-id code
 
 # b
 bindsym $mod+b			            exec --no-startup-id feh --bg-fill --randomize ~/Pictures/wallpapers/*
@@ -167,12 +167,12 @@ bindsym $mod+Shift+m		        exec --no-startup-id discord
 
 # #---Workspace Bindings---# #
 # bindsym $mod+Tab		            exec --no-startup-id rofi-menu-windows
-bindsym $mod+Tab		          workspace next
-bindsym $mod+Shift+Tab		      workspace previous
-bindsym $mod+apostrophe		      split horizontal ;; exec $term
-bindsym $mod+slash		          split vertical ;; exec $term
-bindsym $mod+Shift+slash	      kill
-bindsym $mod+backslash		      workspace back_and_forth
+#bindsym $mod+Tab		          workspace next
+#bindsym $mod+Shift+Tab		      workspace previous
+#bindsym $mod+apostrophe		      split horizontal ;; exec $term
+#bindsym $mod+slash		          split vertical ;; exec $term
+#bindsym $mod+Shift+slash	      kill
+#bindsym $mod+backslash		      workspace back_and_forth
 
 set $ws1 "1"
 set $ws2 "2"
